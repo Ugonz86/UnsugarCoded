@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>unSugarCoded</title>
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <h1><font color="#678ECF">Unsugar</font><i>coded</i></h1>
+      <br>
+      <h2>An easy way to track your daily carbs and sugars! To start, enter your information.</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="new-contact">
+            <br>
+            <div class="form-group">
+              <label for="new-first-name">First name</label>
+              <input type="text" class="form-control" id="new-first-name">
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last name</label>
+              <input type="text" class="form-control" id="new-last-name">
+            </div>
+            <div class="form-group">
+              <label for="first-email">Email</label>
+              <input type="text" class="form-control" id="first-email">
+            </div>
+            <br>
+            <br>
+            <button type="submit" id="add-contact"><span>Create profile</span></button>
+            <br>
+            <br>
+          </form>
+        </div>
+      </div>
+      <div class="container-well">
+
+        <ul id="contacts">
+        </ul>
+      <div id="show-contact">
+        <h5>First name: <span class="first-name"></span></h5>
+        <h5>Last name: <span class="last-name"></span></h5>
+        <h5>Email: <span class="first-email"></span></h5>
+        <br>
+      <div class="jumbotron">
+        <h3>Your daily carb intake. Please insert your daily meals.</h1>
+        <br>
+      <div class="container" id="logbook">
+        <form>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="Breakfast">Breaksfast</label>
+                  <input type="text" class="form-control" id="breakfast" placeholder="Breakfast item">
+                  <input type="text" class="form-control" id="breakfast" placeholder="Breakfast item">
+                  <input type="text" class="form-control" id="breakfast" placeholder="Breakfast item">
+                </div>
+
+                <div class="form-group">
+                  <label for="Lunch">Lunch</label>
+                  <input type="text" class="form-control" id="lunch" placeholder="Lunch item">
+                  <input type="text" class="form-control" id="lunch" placeholder="Lunch item">
+                  <input type="text" class="form-control" id="lunch" placeholder="Lunch item">
+                </div>
+
+                <div class="form-group">
+                  <label for="Dinner">Dinner</label>
+                  <input type="text" class="form-control" id="dinner" placeholder="Dinner item">
+                  <input type="text" class="form-control" id="dinner" placeholder="Dinner item">
+                  <input type="text" class="form-control" id="dinner" placeholder="Dinner item">
+                </div>
+              </div>
+
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <label for="carbs">Breakfast Carbs</label>
+                  <input type="number" class="form-control" id="b-carbs" placeholder="Carbs">
+                  <input type="number" class="form-control" id="b-carbs" placeholder="Carbs">
+                  <input type="number" class="form-control" id="b-carbs" placeholder="Carbs">
+                </div>
+
+                <div class="form-group">
+                  <label for="carbs">Lunch Carbs</label>
+                  <input type="number" class="form-control" id="l-carbs" placeholder="Carbs">
+                  <input type="number" class="form-control" id="l-carbs" placeholder="Carbs">
+                  <input type="number" class="form-control" id="l-carbs" placeholder="Carbs">
+                </div>
+
+                <div class="form-group">
+                  <label for="carbs">Dinner Carbs</label>
+                  <input type="number" class="form-control" id="d-carbs" placeholder="Carbs">
+                  <input type="number" class="form-control" id="d-carbs" placeholder="Carbs">
+                  <input type="number" class="form-control" id="d-carbs" placeholder="Carbs">
+                </div>
+              </div>
+
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <label for="sugar">Breakfast Sugar</label>
+                  <input type="number" class="form-control" id="b-sugar" placeholder="Sugar">
+                  <input type="number" class="form-control" id="b-sugar" placeholder="Sugar">
+                  <input type="number" class="form-control" id="b-sugar" placeholder="Sugar">
+                </div>
+
+                <div class="form-group">
+                  <label for="sugar">Lunch Sugar</label>
+                  <input type="number" class="form-control" id="l-sugar" placeholder="Sugar">
+                  <input type="number" class="form-control" id="l-sugar" placeholder="Sugar">
+                  <input type="number" class="form-control" id="l-sugar" placeholder="Sugar">
+                </div>
+
+                <div class="form-group">
+                  <label for="sugar">Dinner Sugar</label>
+                  <input type="number" class="form-control" id="d-sugar" placeholder="Sugar">
+                  <input type="number" class="form-control" id="d-sugar" placeholder="Sugar">
+                  <input type="number" class="form-control" id="d-sugar" placeholder="Sugar">
+                </div>
+              </div>
+
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <label for="timestamp">Time</label>
+                  <input type="time" class="form-control" id="b-timestamp" placeholder="Time">
+                  <input type="time" class="form-control" id="b-timestamp" placeholder="Time">
+                  <input type="time" class="form-control" id="b-timestam" placeholder="Time">
+                </div>
+
+                <div class="form-group">
+                  <label for="timestamp">Time</label>
+                  <input type="time" class="form-control" id="l-timestamp" placeholder="Time">
+                  <input type="time" class="form-control" id="l-timestam" placeholder="Time">
+                  <input type="time" class="form-control" id="l-timestamp" placeholder="Time">
+                </div>
+
+                <div class="form-group">
+                  <label for="timestamp">Time</label>
+                  <input type="time" class="form-control" id="d-timestamp" placeholder="Time">
+                  <input type="time" class="form-control" id="d-timestamp" placeholder="Time">
+                  <input type="time" class="form-control" id="d-timestamp" placeholder="Time">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                <label for="snacks">Snacks</label>
+                <input type="text" class="form-control" id="snack" placeholder="Snack item">
+                <input type="text" class="form-control" id="snack" placeholder="Snack item">
+                </div>
+                </div>
+
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <label for="carbs">Snacks Carbs</label>
+                  <input type="number" class="form-control" id="s-carbs" placeholder="Carbs">
+                  <input type="number" class="form-control" id="s-carbs" placeholder="Carbs">
+                </div>
+              </div>
+
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <label for="sugar">Snack Sugar</label>
+                  <input type="number" class="form-control" id="s-sugar" placeholder="Sugar">
+                  <input type="number" class="form-control" id="s-sugar" placeholder="Sugar">
+                </div>
+              </div>
+
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <label for="timestamp">Time</label>
+                  <input type="time" class="form-control" id="s-timestamp" placeholder="Time">
+                  <input type="time" class="form-control" id="s-timestamp" placeholder="Time">
+                </div>
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-default" id='log'>Submit</button>
+            <br>
+          </div>
+          <br>
+         <div class="results">
+         </div>
+        </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer"><a href="mealplan.html" target="_self"> Diabetes meal planning and additional resources.</a></footer>
+<br>
+</body>
+</html>
