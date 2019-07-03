@@ -62,7 +62,7 @@ $("form#new-contact").submit(function(event) {
   var newContact = new User(inputtedFirstName, inputtedLastName, inputtedFirstEmail);
 
 
-  $("ul#contacts").append("<li><span class='contact'>" + newContact.fullContact() + "</span></li>");
+  $("#contacts").append("<span class='contact'>" + "Welcome " + newContact.fullContact() + "!" + " <b>Click here to start!</b>" + "</span>");
 
   resetFields();
 
@@ -72,7 +72,7 @@ $("form#new-contact").submit(function(event) {
     $(".first-name").text(newContact.firstName);
     $(".last-name").text(newContact.lastName);
     $(".first-email").text(newContact.email);
-
+    $(".contact").hide();
   });
 
   $("form#new-contact").not().css("display", "none");

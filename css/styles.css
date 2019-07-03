@@ -1,7 +1,10 @@
 h1 {
   font-size: 75px;
   font-weight: bold;
+}
 
+h2 {
+  text-align: center;
 }
 
 h3 {
@@ -33,19 +36,19 @@ img {
   font-size: 18px;
 }
 
-.jumbotron{
+.jumbotron {
   border-radius: 6px;
 }
 
 #show-contact {
   display: none;
-
 }
-
-#logbook {
-
-}
-
+ /* .container {
+   text-align: center; */
+ /* } */
+/* form {
+  text-align: center;
+} */
 #show-log {
   display: none;
 }
